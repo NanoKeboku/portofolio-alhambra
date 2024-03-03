@@ -132,7 +132,7 @@
 .wrap {
   overflow: hidden;
   height: auto;
-  max-height: 700px;
+  max-height: 500px;
   width: 100%;
   position: relative;
   margin: auto;
