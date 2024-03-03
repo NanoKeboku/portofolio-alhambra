@@ -700,7 +700,7 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 100vh; */
+    height: auto;
   }
 
   /* .hero {
@@ -710,8 +710,8 @@ input[type="submit"]:hover {
 
   .c-2 {
     width: 100%;
-    height: 350px;
-    max-height: 500px;
+    height: 750px;
+    max-height: 700px;
     position: relative;
     margin: auto;
     margin-top: 80px;
