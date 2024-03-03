@@ -130,7 +130,7 @@
 } */
 
 .wrap {
-  overflow: hidden;
+  overflow: scroll;
   height: auto;
   max-height: 700px;
   width: 100%;
