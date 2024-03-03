@@ -132,7 +132,7 @@
 .wrap {
   overflow: hidden;
   height: auto;
-  max-height: 800px;
+  /* max-height: 800px; */
   width: 100%;
   position: relative;
   margin: auto;
@@ -148,9 +148,8 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 50vh;
-  /* background-color: #74b0ff; */
-  /* max-height: 700px; */
+  height: 100vh;
+  background-color: #74b0ff;
   margin: auto;
   position: relative;
   padding-left: 40px;
@@ -249,6 +248,7 @@
 .c-2 {
   width: 70%;
   height: 100vh;
+  /* max-height: 700px; */
   display: flex;
   position: relative;
   background-color: rgb(161, 161, 161);
@@ -700,7 +700,7 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    /* height: 100vh; */
   }
 
   /* .hero {
@@ -710,8 +710,8 @@ input[type="submit"]:hover {
 
   .c-2 {
     width: 100%;
-    height: 750px;
-    max-height: 700px;
+    height: 300px;
+    max-height: 500px;
     position: relative;
     margin: auto;
     margin-top: 80px;
