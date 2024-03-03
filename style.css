@@ -149,7 +149,7 @@
   flex-direction: column;
   width: 60%;
   height: 100vh;
-  background-color: #74b0ff;
+  /* background-color: #74b0ff; */
   /* max-height: 700px; */
   margin: auto;
   position: relative;
@@ -733,11 +733,13 @@ input[type="submit"]:hover {
 
   .c-1 {
     /* min-width: 80%; */
+    width: 90%;
     height: 430px;
     max-height: 700px;
     top: 50px;
     padding: 0;
     justify-content: start;
+    background-color: #74b0ff;
   }
 
   .c-1 p {
