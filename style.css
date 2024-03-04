@@ -460,7 +460,30 @@
   height: 500px;
 }
 
-.project-bio {
+.project-sub {
+  padding: 10px 15px;
+  width: max-content;
+  border: 1px;
+  font: 12px "Montserrat";
+  font-weight: 600;
+  background-color: #b1d182;
+  border-radius: 40px;
+  color: black;
+}
+
+.project-img img {
+  width: 40vw;
+}
+
+button.btn-project {
+  width: 200px;
+  height: 40px;
+  font: 13px "Montserrat";
+  color: white;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: 600;
 }
 
 /* ============================================= */
