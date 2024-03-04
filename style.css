@@ -1042,6 +1042,10 @@ input[type="submit"]:hover {
     justify-content: start;
   }
 
+  .myskill {
+    max-height: 600px;
+  }
+
   .card-skill.light {
     width: 70px;
     height: 70px;
