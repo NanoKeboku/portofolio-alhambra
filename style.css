@@ -146,7 +146,7 @@
 .c-1 {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 40%;
   height: 50%;
   /* background-color: #74b0ff; */
   margin: auto;
@@ -245,7 +245,7 @@
 }
 
 .c-2 {
-  width: 70%;
+  width: 55%;
   height: 100vh;
   max-height: 700px;
   display: flex;
@@ -314,6 +314,17 @@
 .text p {
   text-align: center;
   font-family: "Nunito", sans-serif;
+}
+
+.about,
+.skill,
+.project {
+  position: relative;
+  font: 15px "Montserrat";
+  color: chocolate;
+  font-size: larger;
+  top: -50px;
+  /* margin: auto; */
 }
 
 /* myskill */
@@ -416,8 +427,8 @@
 
 .exp {
   width: 100%;
-  height: 80vh;
-  max-height: 700px;
+  /* height: auto; */
+  min-height: auto;
   background-color: #202020;
   margin: 0;
   padding: 0;
@@ -428,6 +439,31 @@
   background-color: #cddff8;
 }
 
+.my-projects {
+  width: 80%;
+  /* background: #000;   */
+  height: 100vh;
+  margin: 100px auto auto auto;
+}
+
+.detil-projects {
+  width: 100%;
+}
+
+.project-judul {
+  width: 80%;
+}
+
+.project-bio,
+.project-img {
+  width: 50%;
+  height: 500px;
+}
+
+.project-bio {
+}
+
+/* ============================================= */
 .contact {
   display: flex;
   width: 100%;
