@@ -5,9 +5,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 :root {
   scroll-behavior: smooth;
-  --main-bg-color: #b1d182;
 }
 
 /* NAVBAR MIDLE */
@@ -86,6 +86,7 @@
 .logo.light {
   color: white;
 }
+
 .logo.light.check {
   background-color: transparent;
 }
@@ -118,21 +119,11 @@
   color: #000000;
 }
 
-/* BODY */
-/* .hero {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  align-items: center;
-  padding: 0;
-  background-color: transparent;
-} */
-
 .wrap {
-  height: 700px;
-  max-height: 700px;
   width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  max-height: 700px;
   position: relative;
   margin: auto;
   display: flex;
@@ -143,11 +134,23 @@
   padding: 0;
 }
 
+
+
+.bio-text {
+  font: 16px "Fira Code";
+  font-weight: 100;
+}
+
+.label p.bio-text.light.check {
+  background-color: transparent;
+}
+
 .c-1 {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
   width: 40%;
-  height: 50%;
+  height: 100%;
   /* background-color: #74b0ff; */
   margin: auto;
   position: relative;
@@ -155,30 +158,18 @@
   justify-content: center;
 }
 
-.c-1 p {
-  font-size: 30px;
-  text-align: left;
-  font-family: "Inconsolata", monospace;
-  background-color: transparent;
-}
-
-.c-1 :nth-child(2),
-.c-1 .wb {
-  font-size: 3vw;
-}
-
 .click-me {
-  position: absolute;
   width: 150px;
-  height: 60px;
-  top: 250px;
+  padding: 7px 10px;
+  margin-top: 30px;
   left: 0px;
-  background-color: chocolate;
+  background-image: linear-gradient(to right, #77f3ab, #a4ffca);
   border-style: none;
+  border-radius: 70px;
   border: 1px solid white;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 18px;
-  color: white;
+  color: black;
   transition: 0.3s;
 }
 
@@ -193,9 +184,10 @@
 }
 
 .click-me.light.check {
-  background-color: #74b0ff;
-  border-color: black;
+  background-image: linear-gradient(to right, #76b1fe, #8ebfff);
+  border: 1px solid grey;
 }
+
 
 .textLoad {
   overflow: hidden;
@@ -235,10 +227,12 @@
 }
 
 @keyframes animate {
+
   40%,
   60% {
     left: 100%;
   }
+
   100% {
     left: 0%;
   }
@@ -246,23 +240,76 @@
 
 .c-2 {
   width: 55%;
-  height: 100vh;
-  max-height: 700px;
+  height: 100%;
   display: flex;
   position: relative;
-  background-color: rgb(161, 161, 161);
+  /* background-color: rgb(161, 161, 161); */
   overflow: hidden;
 }
 
 .c-2 img {
-  width: 500px;
+  width: 600px;
   height: auto;
   position: relative;
-  transform: translate(150px, 100px);
+  transform: translate(80px, 130px);
 }
 
-.c-2.light.check {
-  background-color: #74b0ff;
+.c-2 .before {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  width: 400px;
+  height: 400px;
+  z-index: 10;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #1c1c1c, #252525);
+}
+
+.c-2 .before.light.check {
+  background-image: linear-gradient(to right, #8ebfff, #fff);
+}
+
+
+.floating {
+  display: flex;
+  position: absolute;
+  top: 420px;
+  left: 350px;
+  margin: auto;
+  z-index: 999;
+}
+
+.label p.light.check {
+  background-image: linear-gradient(to right, #76b1fe, #8ebfff);
+}
+
+
+.label p {
+  box-shadow: 3px -2px 1px white;
+  background-image: linear-gradient(to right, #77f3ab, #a4ffca);
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.t-1 {
+  left: 60px;
+  top: -100px;
+  position: relative;
+}
+
+.t-2 {
+  left: -200px;
+  top: -50px;
+  position: relative;
+}
+
+.t-3 {
+  top: 20px;
+  left: 0px;
+  position: relative;
 }
 
 .bio {
@@ -316,7 +363,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-.about,
 .skill,
 .project {
   position: relative;
@@ -334,7 +380,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  justify-content: start;
+  justify-content: space-between;
+  padding-bottom: 100px;
   width: 100%;
   height: 70vh;
   background-color: #181717;
@@ -370,6 +417,7 @@
 * {
   color: white;
 }
+
 .card-skill.light {
   background-color: #393939;
   border: none;
@@ -408,6 +456,7 @@
 .card-title.light {
   color: white;
 }
+
 .card-title.light.check {
   color: black;
 }
@@ -442,7 +491,7 @@
 .my-projects {
   width: 80%;
   /* background: #000;   */
-  height: 100vh;
+  height: 200vh;
   margin: 100px auto auto auto;
 }
 
@@ -484,6 +533,38 @@ button.btn-project {
   background-color: transparent;
   border: 1px solid white;
   font-weight: 600;
+}
+
+.nav-project {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.my-design {
+  display: flex;
+}
+
+/* .project-btn:active {
+  color: red;
+}
+.project-btn:focus {
+  color: red;
+}
+.project-btn:target {
+  color: red;
+} */
+
+.btn-nav-project {
+  background-color: transparent;
+  border: 1px solid chocolate;
+  padding: 10px;
+}
+
+.btn-nav-active {
+  background-color: chocolate;
+  padding: 10px 15px;
+  border: none;
 }
 
 /* ============================================= */
@@ -565,6 +646,7 @@ input[type="submit"]:hover {
   justify-content: center;
   margin-top: 20px;
 }
+
 .bubble.light.check {
   background-color: black;
 }
@@ -582,9 +664,10 @@ input[type="submit"]:hover {
   header {
     background-color: transparent;
   }
+
   .nav {
     position: absolute;
-    z-index: 99;
+    z-index: 99;  
     height: 100vh;
     width: 0;
   }
@@ -592,6 +675,7 @@ input[type="submit"]:hover {
   .nav.detil {
     display: none;
   }
+
   /* NAVBAR LEFT */
 
   #mode img {
@@ -647,12 +731,13 @@ input[type="submit"]:hover {
   .left-nav a.light.check {
     background-color: transparent;
   }
+
   .left-nav a.light.check:hover {
     background-color: #74b0ff;
     color: white;
   }
 
-  .left-nav a.light.check:hover > i {
+  .left-nav a.light.check:hover>i {
     color: white;
   }
 
@@ -665,7 +750,7 @@ input[type="submit"]:hover {
     color: #000000;
   }
 
-  .left-nav.open a:hover > i {
+  .left-nav.open a:hover>i {
     color: #000000;
   }
 
@@ -758,6 +843,7 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     /* height: 100vh; */
   }
 
@@ -768,14 +854,26 @@ input[type="submit"]:hover {
 
   .c-2 {
     width: 100%;
-    height: 300px;
+    height: 700px;
     max-height: 500px;
     position: relative;
+    background-color: #202020;  
     margin: auto;
     margin-top: 80px;
     align-items: center;
     justify-content: center;
     display: flex;
+  }
+
+  .c-2.light.check {
+    background-color: #8ebfff;
+  }
+
+  .c-2 .before {
+    left: 50px;
+    top: 50px;
+    width: 200px;
+    height: 200px;
   }
 
   .mid {
@@ -784,17 +882,40 @@ input[type="submit"]:hover {
     align-items: center;
   }
 
+
   .c-2 img {
     position: relative;
     width: 300px;
-    left: -130px;
+    left: -80px;
+    transform: translate(80px, 50px);
+  }
+
+  .floating {
+    top: 230px;
+    left: 100px;
+  }
+
+
+  .label .t-1,
+  .label .t-2,
+  .label .t-3 {
+    padding: 4px;
+  }
+
+  .t-1 {
+    left: -100px;
+  }
+
+  .label p {
+    font-size: 10px;
   }
 
   .c-1 {
     /* min-width: 80%; */
     width: 90%;
-    height: 430px;
-    max-height: 700px;
+    height: 500px;
+    max-height: 500px;
+
     top: 50px;
     padding: 0;
     justify-content: start;
@@ -805,10 +926,6 @@ input[type="submit"]:hover {
     position: relative;
   }
 
-  .c-1 :nth-child(1) {
-    font-size: 25px;
-    padding-bottom: 18px;
-  }
 
   .c-1 p {
     text-align: left;
@@ -820,13 +937,38 @@ input[type="submit"]:hover {
     left: 0px;
   }
 
+  .label p {
+    font-size: 9px;
+  }
+
+  .label .t-1{
+    left: 80px;
+    top: -80px;
+    padding: 3px;
+  }
+
+  .label .t-2 {
+    left: -75px;
+    top: -80px;
+    padding: 3px;
+  }
+
+  .label .t-3 {
+    left: 50px;
+    top: -50px;
+  }
+
+
   .click-me {
-    width: 150px;
-    height: 60px;
+    width: 130px;
+    font-size: 13px;
+    height: 40px;
     position: relative;
     left: 0px;
     top: 80px;
   }
+
+
 
   .bio {
     display: flex;
@@ -850,6 +992,10 @@ input[type="submit"]:hover {
     text-align: left;
   }
 
+  .bio-text {
+    font-size: 13px;
+  }
+
   .textLoad {
     height: 200px;
     position: absolute;
@@ -857,8 +1003,10 @@ input[type="submit"]:hover {
 
   .textLoad .text {
     font-size: 28px;
-    top: 5px;
+    top: -10px;
   }
+
+
 
   .secText::before {
     content: " ";
@@ -877,10 +1025,12 @@ input[type="submit"]:hover {
   }
 
   @keyframes animate {
+
     40%,
     60% {
       left: 100%;
     }
+
     100% {
       left: 0%;
     }
@@ -992,13 +1142,49 @@ input[type="submit"]:hover {
 
   .c-2 {
     width: 100%;
-    height: 600px;
+    height: 900px;
     top: 0;
+    background-color: #202020;
     position: relative;
     /* margin-top: 0px; */
     align-items: center;
     justify-content: center;
     display: flex;
+  }
+
+  .c-2.light.check {
+    background-color: #8FC0FF;
+  }
+
+  .c-2 img {
+    position: relative;
+    width: 300px;
+    left: -80px;
+    transform: translate(80px, 50px);
+  }
+
+  .t-1{
+    top: -80px;
+    left: 100px;
+  }
+
+  .t-2 {
+    left: -130px;
+    top: -70px;
+  }
+
+  .label .t-3{
+    top: -50px;
+    left: 60px;
+  }
+
+  .c-2 .before {
+    left: 0;
+  }
+
+  .floating {
+    left: 140px;
+    top: 400px;
   }
 
   .mid {
@@ -1014,6 +1200,23 @@ input[type="submit"]:hover {
     top: 50px;
   }
 
+  .floating {
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    margin: auto;
+    z-index: 999;
+  }
+
+  .label p {
+    font-size: 14px;
+  }
+
+  p.t-3 {
+    top: -100px;
+  }
+
   .c-1 p,
   .c-1 h1 {
     /* min-width: 400px; */
@@ -1024,43 +1227,42 @@ input[type="submit"]:hover {
     text-align: left;
   }
 
-  .c-1 p {
-    font-size: 36px;
+  .c-1 p.bio-text {
+    font-size: 20px;
   }
 
   .c-1 :nth-child(2),
   .c-1 .wb {
-    font-size: 39px;
     margin: 10px;
   }
 
   .c-1 {
     width: 700px;
     box-sizing: border-box;
-    height: 700px;
+    max-height: 900px;
     padding: 20px;
-    top: 30px;
     position: relative;
+    /* flex-direction: column-reverse; */
+    /* bottom: 0; */
     margin: auto;
     justify-content: flex-start;
   }
 
-  #click-me {
+  .click-me {
     position: relative;
-    left: 0;
-    top: 200px;
+    left: -20px;
+    bottom: 0px;
+    font-size: 19px;
     z-index: 9999;
-    width: 180px;
-    height: 70px;
+    width: 160px;
+    height: 50px;
   }
 
-  .click-me.light {
-    left: 0px;
-  }
 
   .container {
     top: 0;
   }
+
   .bio {
     display: flex;
     position: relative;
@@ -1080,13 +1282,15 @@ input[type="submit"]:hover {
   .textLoad {
     height: 200px;
     left: -10px;
-    top: 130px;
+    top: 40px;
+    /* top: 130px; */
     margin: 0;
-    position: absolute;
+    position: relative;
   }
 
   .textLoad .text {
     font-size: 55px;
+    margin-bottom: 30px;
   }
 
   .hero-right {

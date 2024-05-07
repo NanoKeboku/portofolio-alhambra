@@ -9,6 +9,11 @@
   <title>Portofolio</title>
   <script src="https://kit.fontawesome.com/60bfabd217.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=EB+Garamond&family=Fira+Code:wght@300..700&family=Inconsolata:wght@600&family=Josefin+Sans:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic:wght@700&family=Noto+Serif:wght@500&family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -68,14 +73,13 @@
   </header>
   <div class="wrap light">
     <div class="c-1">
-      <div data-aos="fade-right">
-        <p class="light" style="background-color: transparent">
-          Hi there 🖐 , my name is Alhambra Ferdinando
-        </p>
-        <div class="textLoad">
-          <span class="text firstText light" style="background-color: transparent">I'm a
-          </span>
-          <span class="text secText light" style="background-color: transparent"></span>
+      <div data-aos="fade-right" >
+        <div class="textLoad ">
+          <h1 class="text firstText light" style="background-color: transparent">Hi, I’m Nando
+          </h1>
+          <p class="bio-text light" style="background-color: transparent">
+            Welcome to my imaginative world! Let's explore simple but creative works together.
+          </p>
         </div>
         <button class="click-me light">Hire Me 🚀</button>
       </div>
@@ -83,31 +87,38 @@
 
     <div class="c-2 light">
       <div data-aos="fade-up mid">
-        <img src="./ICON/me.png" alt="Paris" />
+        <div class="floating">
+          <div class="label">
+            <p class="bio-text t-1 text-black light">Front-End Dev</p>
+            <p class="bio-text t-2 text-black light ">Graphic Designer</p>
+            <p class="bio-text t-3 text-black light">UI/UX Designer</p>
+          </div>
+        </div>
+        <img style="z-index: 11;" src="img/nando.png" alt="Paris" />
+        <div class="before light"></div>
       </div>
+     
     </div>
   </div>
   <!--BIO-->
-  <div class="bio light" class="d-flex align-items-center>
-    <div data-aos=" fade-up"">
+  <div class="bio light" class="d-flex align-items-center">
     <div class="me">
-      <p class="about">About Me</p>
       <h1 style="
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
               sans-serif;
           " class="light">
-        Hello, I'm
-        <strong class="name light">Nando</strong>
+        About
+        <span class="name light" style="color:#77f3ab">Me</span>
       </h1>
       <div class="text container-fluid d-flex" style="width: 100%; height: auto">
         <p style="font-size: 18px; background-color: transparent" class="p-4">
-          Hello everyone, my name is Alhambra Ferdinando, a second-semester
+          Hello everyone, my name is <span style="font-family: Nunito; color: #77f3ab;">Alhambra Ferdinando</span>, a second-semester
           student majoring in Information Technology at Muhammadiyah Purworejo
           University. I am also a FrontEnd Web Developer who has successfully
           developed several websites and web applications.<br /><br />
           Besides, I am actively involved in the web developer community and
           often give talks and workshops on web development at various events
-          and seminars. I am very excited t o share my experiences and
+          and semin`ars. I am very excited t o share my experiences and
           knowledge with you all about the world of web development. Thank you
         </p>
       </div>
@@ -117,27 +128,26 @@
   <!-- SKILL -->
   <div class="myskill light">
     <div class="its-me light d-flex flex-column ">
-      <p class="skill">Skills</p>
       <h1 id="skill">What I Am Great At</h1>
     </div>
     <div class="row">
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill" src="/ICON/html.png" alt="" />
+        <img class="icon-skill" src="ICON/html.png" alt="" />
       </div>
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill" src="/ICON/css-3.png" alt="" />
+        <img class="icon-skill" src="ICON/css-3.png" alt="" />
       </div>
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill" src="/ICON/js.png" alt="" />
+        <img class="icon-skill" src="ICON/js.png" alt="" />
       </div>
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill" src="/ICON/bootstrap-5-1.svg" alt="" />
+        <img class="icon-skill" src="ICON/bootstrap-5-1.svg" alt="" />
       </div>
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill figma" src="/ICON/figma_logo.svg" alt="" />
+        <img class="icon-skill figma" src="ICON/figma_logo.svg" alt="" />
       </div>
       <div class="card-skill light position-relative card rounded-4p-3">
-        <img class="icon-skill" src="/ICON/Git-Icon-1788C.svg" alt="" />
+        <img class="icon-skill" src="ICON/Git-Icon-1788C.svg" alt="" />
       </div>
     </div>
   </div>
@@ -147,73 +157,105 @@
       <p class="project">Project</p>
       <h1 class="light bg-transparent">See My Projects</h1>
     </div>
-    <div class="my-projects container-fluid d-flex">
+    <div id="nav-project" class="nav-project position-relative bg-info p-2">
+      <button onclick="changeProject(this)" class="project-btn btn-nav-project btn-nav-active rounded-5">Web
+        Design</button>
+      <button onclick="changeProject(this)" class="design-btn btn-nav-project rounded-5">Design</button>
+    </div>
+    <div class="my-projects container-fluid">
       <div class="detil-projects row d-flex">
         <div class="project-bio d-flex gap-3 flex-column p-5 col-sm-12 col-xl-6">
           <!-- <div > -->
-            <p class="project-sub">E-Learning Web</p>
+          <p class="project-sub">E-Learning Web</p>
           <!-- </div> -->
           <h2>Let's Study</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex obcaecati ab labore culpa quis mollitia
-            eligendi quos. Dicta quae earum ut nulla minus quidem accusantium iure adipisci voluptatum! Maxime laudantium
-            qui fugiat quis eius consectetur delectuss</p>  
-            <button class="btn-project">See Full Project -></button>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex obcaecati ab labore culpa quis
+            mollitia
+            eligendi quos. Dicta quae earum ut nulla minus quidem accusantium iure adipisci voluptatum! Maxime
+            laudantium
+            qui fugiat quis eius consectetur delectuss</p>
+          <button class="btn-project">See Full Project -></button>
         </div>
         <div class="project-img col-sm-12 col-xl-6">
           <img src="img/e-commerce-removebg-preview.png" alt="e-commerce" srcset="">
         </div>
+        <div class="detil-projects row d-flex justify-content-">
+          <div class="project-bio d-flex gap-3 flex-column p-5 col-sm-12 col-xl-6">
+            <!-- <div > -->
+            <p class="project-sub">E-Learning Web</p>
+            <!-- </div> -->
+            <h2>Let's Study</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex obcaecati ab labore culpa quis
+              mollitia
+              eligendi quos. Dicta quae earum ut nulla minus quidem accusantium iure adipisci voluptatum! Maxime
+              laudantium
+              qui fugiat quis eius consectetur delectuss</p>
+            <button class="btn-project">See Full Project -></button>
+          </div>
+          <div class="project-img col-sm-12 col-xl-6">
+            <img src="img/e-commerce-removebg-preview.png" alt="e-commerce" srcset="">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="my-design">
+      <div class="project-img col-sm-12 col-xl-6">
+        <img src="img/e-commerce-removebg-preview.png" alt="e-commerce" srcset="">
+      </div>
+      <div class="project-img col-sm-12 col-xl-6">
+        <img src="img/e-commerce-removebg-preview.png" alt="e-commerce" srcset="">
+      </div>
+    </div>
 
-  <!-- <div class="contact col-sm light">
+    <!-- <div class="contact col-sm light">
     <form>
 
   </div> -->
 
-  <div id="float-nav">
-    <div class="bubble one light">
-      <i class="fa-brands fa-instagram br light"></i>
+    <div id="float-nav">
+      <div class="bubble one light">
+        <i class="fa-brands fa-instagram br light"></i>
+      </div>
+      <div class="bubble two light">
+        <i class="fa-brands fa-twitter br light"></i>
+      </div>
+      <div class="bubble three light">
+        <i class="fa-brands fa-github br light"></i>
+      </div>
+      <div class="bubble four light">
+        <i class="fa-brands fa-twitch br light"></i>
+      </div>
     </div>
-    <div class="bubble two light">
-      <i class="fa-brands fa-twitter br light"></i>
-    </div>
-    <div class="bubble three light">
-      <i class="fa-brands fa-github br light"></i>
-    </div>
-    <div class="bubble four light">
-      <i class="fa-brands fa-twitch br light"></i>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    AOS.init({
-      // Global settings:
-      disable: false,
-      startEvent: "DOMContentLoaded",
-      initClassName: "aos-init",
-      animatedClassName: "aos-animate",
-      useClassNames: false,
-      disableMutationObserver: false,
-      debounceDelay: 50,
-      throttleDelay: 99,
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false,
+        startEvent: "DOMContentLoaded",
+        initClassName: "aos-init",
+        animatedClassName: "aos-animate",
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
 
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120,
-      delay: 0,
-      duration: 1000,
-      easing: "ease",
-      once: false,
-      mirror: false,
-      anchorPlacement: "top-bottom",
-    });
-  </script>
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120,
+        delay: 0,
+        duration: 1000,
+        easing: "ease",
+        once: false,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
 </body>
 
 </html>

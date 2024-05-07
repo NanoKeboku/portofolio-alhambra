@@ -5,7 +5,6 @@ let act = toggle.addEventListener("click", function () {
   let tambah = document.querySelector(".left-nav");
   tambah.classList.toggle("open");
   toggle.classList.toggle("fix");
-  // btnPhone.classList.toggle("active");
 });
 
 const text = document.querySelector(".secText");
@@ -16,10 +15,10 @@ const textLoad = () => {
   }, 0);
   setTimeout(() => {
     text.textContent = ` Designer`;
-  }, 4000);
+  }, 4100);
   setTimeout(() => {
     text.textContent = ` UI/UX Designer`;
-  }, 8050);
+  }, 8100);
 };
 
 textLoad();
@@ -56,8 +55,21 @@ function lightMode() {
 }
 
 lightMode();
-// const navLeft = document.querySelector(".fix");
 
-// if (navLeft.classList.contains("fix")) {
-//   navLeft.style.backgroundColor = "white";
-// }
+// ================= JQUERY===============
+$(document).ready(function () {
+  $(".my-design").hide();
+  let btnActive = document.querySelector(".project-btn");
+  $(".project-btn").click(function () {
+    $(".my-projects").show();
+    $(".my-design").hide();
+    // $(".project-btn").append(btnActive);
+    btnActive.classList("btn-nav-active");
+  });
+  $(".design-btn").click(function () {
+    $(".my-projects").hide();
+    $(".my-design").show();
+    // $(".design-btn").append(btnActive);
+    btnActive.classList.add("btn-nav-active");
+  });
+});
