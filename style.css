@@ -10,11 +10,19 @@
   scroll-behavior: smooth;
 }
 
+body {
+  /* max-width: 1400px; */
+  display: flex;
+  flex-direction: column;
+
+}
+
 /* NAVBAR MIDLE */
 .nav {
   display: flex;
   position: fixed;
   width: 100%;
+  max-width: 1400px;
   height: 70px;
   z-index: 9999;
   box-sizing: border-box;
@@ -163,10 +171,10 @@
   padding: 7px 10px;
   margin-top: 30px;
   left: 0px;
-  background-image: linear-gradient(to right, #77f3ab, #a4ffca);
   border-style: none;
-  border-radius: 70px;
-  border: 1px solid white;
+  background-color: #FFD600;
+  border-radius: 5px;
+  border: none;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 18px;
   color: black;
@@ -267,27 +275,48 @@
   background-image: linear-gradient(to right, #76b1fe, #8ebfff);
 }
 
+.label .bio-text {
+  left: 100px;
+  top: -140px;
+  border-radius: 100%;
+  position: relative;
+  background-image: linear-gradient(to right, #202020, #1e1e1e);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 8px 30px #181717;
+}
 
-.label p {
-  box-shadow: 3px -2px 1px white;
-  background-image: linear-gradient(to right, #77f3ab, #a4ffca);
-  white-space: nowrap;
-  text-align: center;
-  font-weight: 500;
-  font-size: 20px;
-  padding: 4px;
+.label .bio-text.t-1 i {
+  font-size: 25px;
+  color: #ef2424;
+}
+
+.label .bio-text.t-2 i {
+  font-size: 35px;
+  color: #2483ff;
+}
+
+.label .bio-text.t-3 i {
+  font-size: 45px;
+  color: #deef24;
 }
 
 .label .t-1 {
-  left: 60px;
-  top: -100px;
+  width: 40px;
+  height: 40px;
   position: relative;
+  left: 170px;
 }
 
 .label .t-2 {
-  left: -200px;
+  left: -120px;
   padding: 5px 10px;
-  top: -50px;
+  top: -120px;
+  width: 60px;
+  height: 60px;
   position: relative;
 }
 
@@ -300,15 +329,14 @@
 .bio {
   display: flex;
   width: 100%;
-  height: 70vh;
-  /* max-height: 50vh; */
+  max-width: 1400px;
+  height: 90vh;
+  max-height:700px;
   background-color: #202020;
   margin: auto;
   transition: 0.3s;
   justify-content: start;
   align-items: end;
-  gap: 30px;
-  padding: 40px 70px;
 }
 
 .bio.light.check p {
@@ -322,13 +350,12 @@
 }
 
 .bio-right {
-   width: 50%;
+  width: 50%;
 }
 
 .bio p {
-  background-color: transparent ;
-  transition: 0.3s;
-
+  background-color: transparent;
+  transition: 3s;
 }
 
 .name.light {
@@ -345,6 +372,39 @@
 .bio p.light {
   background-color: transparent;
   transition: 0.3s;
+}
+
+.bio .text {
+  width: 50%;
+  /* background: #000; */
+  align-items: start;
+  padding: 45px 75px 40px 45px;
+  position: relative;
+  justify-content: center;
+}
+
+.bio .left {
+  /* background:#2483ff; */
+  align-items: end;
+  padding-right: 70px;
+  width: 50%;
+}
+
+.shape {
+  width: 450px;
+  background-color: #2e2e2e;
+  box-shadow: 5px 12px 17px -3px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 5px 12px 17px -3px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 5px 12px 17px -3px rgba(0, 0, 0, 0.43);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.shape h5 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
 }
 
 .me {
@@ -380,6 +440,9 @@
   justify-content: space-between;
   padding-bottom: 100px;
   width: 100%;
+  max-width: 1400px;
+  max-height: 500px;
+  margin: auto;
   height: 70vh;
   background-color: #181717;
   background-image: url(ICON/bubble-dark.svg);
@@ -473,10 +536,11 @@
 
 .exp {
   width: 100%;
+  max-width: 1400px;
+  margin: auto;
   /* height: auto; */
   min-height: auto;
   background-color: #202020;
-  margin: 0;
   padding: 0;
   transition-duration: 0.3s;
 }
@@ -664,7 +728,7 @@ input[type="submit"]:hover {
 
   .nav {
     position: absolute;
-    z-index: 99;  
+    z-index: 99;
     height: 100vh;
     width: 0;
   }
@@ -854,7 +918,7 @@ input[type="submit"]:hover {
     height: 700px;
     max-height: 500px;
     position: relative;
-    background-color: #202020;  
+    background-color: #202020;
     margin: auto;
     margin-top: 80px;
     align-items: center;
@@ -938,7 +1002,7 @@ input[type="submit"]:hover {
     font-size: 9px;
   }
 
-  .label .t-1{
+  .label .t-1 {
     left: 80px;
     top: -80px;
     padding: 3px;
@@ -1161,7 +1225,7 @@ input[type="submit"]:hover {
     transform: translate(80px, 50px);
   }
 
-  .t-1{
+  .t-1 {
     top: -80px;
     left: 100px;
   }
@@ -1171,7 +1235,7 @@ input[type="submit"]:hover {
     top: -70px;
   }
 
-  .label .t-3{
+  .label .t-3 {
     top: -50px;
     left: 60px;
   }
