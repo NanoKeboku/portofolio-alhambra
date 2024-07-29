@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const boardSize = 10;
+
+function createBoard() {
+  const board = [];
+  for (let i = 0; i < boardSize; i++) {
+    board[i] = new Array(boardSize).fill("-");
+  }
+  return board;
+}
+
+function placeShips(board, ships) {
+  ships.forEach(ship => {
+    let placed = false;
+    while (!placed) {
+      const orientation = Math.random() < 0.5 ? "horizontal" : "vertical";
+      const row = Math.floor(Math.random() * (boardSize - ship.length));
+      const col = Math.floor(Math.random() * (boardSize - (orientation === "horizontal" ? ship.length : 1)));
+
+      let valid = true;
+      for (let i = 0; i < ship.length; i++) {
+        const newRow = orientation === "horizontal" ? row : row + i;
+        const newCol = orientation === "horizontal" ? col + i : col;
+        if (board[newRow] && board[newRow][newCol] !== "-") {
+          valid = false;
+          break;
+        }
+      }
+
+      if (valid) {
+        for (let i = 0; i < ship.length; i++) {
+          const newRow = orientation === "horizontal" ? row : row + i;
+          const newCol = orientation === "horizontal" ? col + i : col;
+          board[newRow][newCol] = ship.charAt(i);
+        }
+        placed = true;
+      }
+    }
+  });
+}
+
+function attack(board, row, col) {
+  if (board[row] && board[row][col] === "-") {
+    board[row][col] = "miss";
+  } else if (board[row] && board[row][col] !== "-") {
+    board[row][col] = "hit";
+  }
+}
+
+const playerBoard = createBoard();
+const enemyBoard = createBoard();
+
+const ships = [
+  "carrier", 
+  "battleship", 
+  "cruiser", 
+  "submarine", 
+  "destroyer", 
+];
+
+placeShips(playerBoard, ships); 
+
+while (condition) {
+  const row = prompt("Enter row to attack (0-9): ");
+  const col = prompt("Enter column to attack (0-9): ");
+  attack(enemyBoard, parseInt(row), parseInt(col));
+}
+
+
+    </script>
+</body>
+</html>
